@@ -121,7 +121,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Web Design and Technologies</h5>
-						<p> I am big fan of open source technologies that power web today. My interests includes PHP, HTML5, Javascript, LAMP stack, Dockers, Apache, mySQL, MongoDB. </p>
+						<p>My interests include PHP, HTML5, Javascript, LAMP stack, Dockers, Apache, mySQL, MongoDB, Machine Learning, Big Data and OpenStack. </p>
 					</div>
                 </div>
 				</div>
@@ -147,7 +147,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Cloud Computing</h5>
-						<p> I have strong experience with public cloud such as Google Compute, Google App Engine, Microsoft Azure and private cloud solutions.</p>
+						<p> I have strong experience with public cloud such as Redhat OpenShift, Google Compute, Google App Engine, Microsoft Azure and private cloud solutions.</p>
 					</div>
                 </div>
 				</div>
