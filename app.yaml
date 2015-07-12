@@ -8,10 +8,14 @@ handlers:
 - url: /(.+\.php)$
   script: assets/\1
   
-- url: /(.*\.(htm|html|css|js|img|png|jpg|map|woff|ttf))$
+- url: /(.*\.(css|js|img|png|jpg|map|woff|ttf))$
   static_files: assets/\1
   upload: assets/.*\.(htm|html|css|js|img|png|jpg|map|woff|ttf)$
   application_readable: true
 
-  
+- url: /(.*\.(htm|html))$
+  script: assets/index.php
+
+- url: /
+  script: assets/index.php
 
