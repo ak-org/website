@@ -1,46 +1,60 @@
 <?php
+  
+use \google\appengine\api\mail\Message;
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
-echo "Hello World \n";
-  if(!isset($_POST['submit']))
+ob_start();
+
+  if(!isset($_POST['message']))
 {
 	//This page should not be accessed directly. Need to submit the form.
 	echo "error; you need to submit the form!";
+  foreach ($_POST as $key => $value)
+      echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+ 
   exit(1);
 }
-echo "Hello World \n";
+
+
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $message = $_POST['message'];
 
-//Validate first
-if(empty($name)||empty($visitor_email)) 
-{
-    echo "Name and email are mandatory!";
-    exit;
-}
-
 if(IsInjected($visitor_email))
 {
     echo "Bad email value!";
-    exit;
+    exit(1);
 }
 
-$email_from = 'info@ashishkumar.org';//<== update the email address
+$email_from = 'ashish@ashishkumar.org';//<== update the email address
 $email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+$email_body = "You have received a new message from the user $name with email id $visitor_email \n".
+    "Here is the message:\n $message \n\n\n".
+        
+$to = "ashish@ashishkumar.org";//<== update the email address
+
     
-$to = "info@ashishkumar.org";//<== update the email address
-$headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
-//Send the email!
-mail($to,$email_subject,$email_body,$headers);
-//done. redirect to thank-you page.
-echo "Thank you. Sending you back to the website";
-header('Location: http://www.ashishkumar.org/index.php');
-echo "Thank you. Sending you back to the website";
+try
+{
+   $message = new message();
+   $message->setSender($email_from);
+   $message->addTo($to);
+   $message->setSubject($email_subject);
+   $message->setTextBody($email_body);
+   $message->send();
+}
+catch (InvalidArgumentException $e)
+{
+  // To add
+}
+
+
+//mail() not supported on GAE
+//mail($to,$email_subject,$email_body,$headers);
+//done. redirect to main page.
+header('Location: index.php');
+
 exit(0);
 
 
