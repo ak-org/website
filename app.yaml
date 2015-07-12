@@ -1,0 +1,17 @@
+application: ak-org
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+  
+- url: /(.+\.php)$
+  script: assets/\1
+  
+- url: /(.*\.(htm|html|css|js|img|png|jpg|map))$
+  static_files: assets/\1
+  upload: assets/.*\.(htm|html|css|js|img|png|jpg|map)$
+  application_readable: true
+
+  
+

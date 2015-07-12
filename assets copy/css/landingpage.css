@@ -1,0 +1,100 @@
+/**
+ * @author Ashish Kumar
+ */
+		html, body{
+		  width:100%;
+		  height:100%;
+
+		}
+		
+        /* 
+         ******************************************************************
+         *what a pain to support CSS3 implementation of multiple browsers *
+         ****************************************************************** 
+         */
+        
+        /* to support Internet Explorer 9+ */
+		@keyframes rotate {
+		  0% {		
+			   transform: rotate(-3deg);
+		  }
+
+		  50% {
+			   transform: rotate(3deg);		  
+		  }
+
+		  100% {	
+		       transform: rotate(-3deg);
+		  }
+		
+		}
+			
+		/* to support mozilla firefox */		
+		@-moz-keyframes rotate {
+		  0% {		
+			   -moz-transform: rotate(-3deg);
+		  }
+
+		  50% {
+			   -moz-transform: rotate(3deg);		  
+		  }
+
+		  100% {	
+		       -moz-transform: rotate(-3deg);
+		  }
+		
+		}  
+		  		
+		@-webkit-keyframes rotate {
+		  0% {
+			-webkit-transform: rotate(-3deg);
+			  
+		  }
+
+		  50% {
+		    -webkit-transform: rotate(3deg);
+					  
+		  }
+
+		  100% {
+		    -webkit-transform: rotate(-3deg);
+		  
+		  }		  
+		  
+		}   
+  
+      
+      #myCanvas {
+        position:absolute;
+        border: 2px solid #9C9898;
+        border-radius:25px;
+
+		-webkit-box-shadow:0 5px 10px #aaa;
+		   -moz-box-shadow:0 5px 10px #aaa;
+		        box-shadow:0 5px 10px #aaa;
+
+	    -webkit-animation-name: rotate;
+	       -moz-animation-name: rotate;
+	            animation-name: rotate;
+	           
+	    -webkit-animation-duration:2s;
+	       -moz-animation-duration:2s;
+	    	    animation-duration:2s;
+	    	    
+	    -webkit-animation-timing-function:ease-in-out;
+	       -moz-animation-timing-function:ease-in-out;
+	            animation-timing-function:ease-in-out;
+	            
+	    -webkit-animation-iteration-count:infinite;
+	       -moz-animation-iteration-count:infinite;
+	            animation-iteration-count:infinite;
+		    	        
+      }
+     
+     #myCanvas:hover {
+     	
+ 
+
+        border-radius:25px;
+        
+      }
