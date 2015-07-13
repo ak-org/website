@@ -111,7 +111,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>App development</h5>
-						<p> I have designed and developed apps for blackberry, Android, Windows platforms as well as plain Web applications. </p>
+						<p> Design and develop apps for mobile platforms as well as the Web applications. </p>
 					</div>
                 </div>
 				</div>
@@ -124,7 +124,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Web Design and Technologies</h5>
-						<p>My interests include PHP, HTML5, Javascript, LAMP stack, Dockers, Apache, mySQL, MongoDB, Machine Learning, Big Data and OpenStack. </p>
+						<p>PHP, HTML5, Javascript, LAMP stack, Dockers, Apache, mySQL, MongoDB, Machine Learning, Big Data and OpenStack. </p>
 					</div>
                 </div>
 				</div>
@@ -137,7 +137,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Application Infrastructure Engineering</h5>
-						<p> I am years of experience in designing, architecting, building and supporting IaaS/PaaS/SaaS based platforms on privately owned data centers as well as public clouds.</p>
+						<p> Design, architect, build and support IaaS/PaaS/SaaS based platforms on privately owned data centers as well as public clouds.</p>
 					</div>
                 </div>
 				</div>
@@ -150,7 +150,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Cloud Computing</h5>
-						<p> I have strong experience with public cloud such as Redhat OpenShift, Google Compute, Google App Engine, Microsoft Azure and private cloud solutions.</p>
+						<p> Expert in public cloud such as Redhat OpenShift, Google Compute, Google App Engine, Microsoft Azure and private cloud solutions.</p>
 					</div>
                 </div>
 				</div>
@@ -267,7 +267,7 @@
 						</a>
 					</div>
 					</div>
-					<p>&copy;Copyright AshishKumar.org. All rights reserved.</p>
+					<p>&copy; AshishKumar.org. All rights reserved.</p>
 				</div>
 			</div>	
 		</div>
